@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legend — GTA VI Trophy Guide & Tracker (all 55 PS5 trophies)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="masthead">
+  <div class="mast-text">
+    <h1>LEONIDA LEGEND</h1>
+    <p class="tagline">The complete offline guide &amp; tracker for all <strong>55 Grand Theft Auto VI trophies</strong> on PlayStation 5 — every guide in our own words, every fact cited. 1 Platinum · 2 Gold · 6 Silver · 46 Bronze · <strong>no online trophies</strong> in this list.</p>
+  </div>
+  <div class="mast-progress">
+    <div id="progress-ring" role="img" aria-label="Platinum progress"></div>
+    <p id="progress-line">0 of 55 earned</p>
+    <p id="grade-line">Platinum 0/1 · Gold 0/2 · Silver 0/6 · Bronze 0/46</p>
+  </div>
+</header>
+
+<nav id="view-tabs" aria-label="Views">
+  <button type="button" class="tab is-active" data-view="checklist">☑ Checklist &amp; Guide</button>
+  <button type="button" class="tab" data-view="roadmap">🗺 Roadmap to the Platinum</button>
+  <button type="button" class="tab" data-view="missables">⚠ Missables &amp; Warnings</button>
+</nav>
+
+<section id="view-checklist" class="view">
+  <div id="toolbar">
+    <div class="tool-row">
+      <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+      <div id="kind-filters" role="group" aria-label="Filter by kind">
+        <button type="button" class="chip is-active" data-kind="all">All kinds</button>
+        <button type="button" class="chip" data-kind="story">Story</button>
+        <button type="button" class="chip" data-kind="collectibles">Collectibles</button>
+        <button type="button" class="chip" data-kind="activities">Activities</button>
+        <button type="button" class="chip" data-kind="missable">⚠ Missable</button>
+      </div>
+      <label class="ctl">Grade
+        <select id="grade-filter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+    </div>
+    <div class="tool-row">
+      <label class="ctl switch"><input id="spoiler-toggle" type="checkbox"> 🛡 Spoiler shield — hide story trophy names &amp; descriptions until earned</label>
+      <label class="ctl switch"><input id="hide-earned-toggle" type="checkbox"> Hide earned</label>
+      <span class="spacer"></span>
+      <button id="export-btn" type="button">⬇ Export progress</button>
+      <label id="import-label" class="button-like">⬆ Import progress <input id="import-file" type="file" accept="application/json,.json" hidden></label>
+      <button id="reset-btn" type="button">Reset</button>
+    </div>
+    <p id="list-summary" class="summary-line"></p>
+  </div>
+
+  <div id="checklist-layout">
+    <ol id="trophy-list"></ol>
+    <article id="detail-panel" aria-live="polite"></article>
+  </div>
+</section>
+
+<section id="view-roadmap" class="view" hidden>
+  <div id="roadmap-intro">
+    <h2>Roadmap to the Platinum — the order to earn them in</h2>
+    <p>Eight stages, built from the official trophy descriptions and the launch guides. Play the story first (Stages 1–4), do the one missable thing in Chapter 1, then clean up in free roam. PowerPyx estimates roughly <strong>200 hours</strong> for the Platinum (60–80 story, ~100 checklist, ~10 cleanup) at a difficulty of about 4/10, in a <strong>single playthrough</strong>. Two golden rules: <strong>never use cheats</strong> on a trophy save (GTABase and TechWiser report they disable trophies and saving), and there are <strong>no online trophies</strong> — everything is single-player.</p>
+  </div>
+  <div id="roadmap-stages"></div>
+</section>
+
+<section id="view-missables" class="view" hidden>
+  <h2>Missables &amp; warnings — read this before Chapter 1 ends</h2>
+  <div id="missable-cards"></div>
+  <div class="warn-box">
+    <h3>⚠ Also handle with care</h3>
+    <ul>
+      <li><strong>Stranger strands (Andy, Kenton, Billy, Randy, Tyrone):</strong> one report (TechWiser, via EGamers) says stranger chains can have windows tied to story progress. Not confirmed as missable — but start each chain when it first appears instead of banking all of them for the endgame.</li>
+      <li><strong>Maximum Withdrawal (bank vaults)</strong> needs the <em>optional</em> Chapter 4 mission “That’s Where The Money Is…”. Take it when it appears in Chapter 4 so vaults open up.</li>
+      <li><strong>Cheats disable trophies and saving</strong> (GTABase &amp; TechWiser). Keep this save cheat-free.</li>
+      <li><strong>A Long Road (100%)</strong> is the long pole: its checklist only appears after the story, under Progress &gt; Stats.</li>
+    </ul>
+  </div>
+</section>
+
+<footer id="colophon">
+  <p>Guides written for this page in our own words. Official trophy names and descriptions are PlayStation's, as published. Facts are cited beside every trophy — sources: Exophase (the PS5 list), Push Square's Trophy Guide &amp; Roadmap, GameMapa's trophy list &amp; roadmap, EGamers' list reporting GTABase, PowerPyx and TechWiser, and GTADB's platinum guide. This app works fully offline and stores progress only in your browser.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
